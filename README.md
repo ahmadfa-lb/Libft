@@ -1,63 +1,115 @@
-# 42 Libft
+# libft
 
-## Overview
-
-The **Libft** project is a reimplementation of the C standard library functions. This project aims to help students at 42 understand and practice the fundamentals of C programming, memory management, and data structures. The library includes various functions for string manipulation, memory management, character classification, and more.
+**`libft`** is a custom C library created to provide implementations of various standard library functions, additional utilities, and data structures. This project helps understand how these functions work, improves C programming skills, and serves as a useful tool for subsequent projects in the curriculum.
 
 ## Table of Contents
 
-- [Requirements](#requirements)
+- [Introduction](#introduction)
+- [Common Instructions](#common-instructions)
+- [Mandatory Part](#mandatory-part)
+  - [Part 1 - Libc Functions](#part-1---libc-functions)
+  - [Part 2 - Additional Functions](#part-2---additional-functions)
+- [Bonus Part](#bonus-part)
 - [Installation](#installation)
-- [Functions Implemented](#functions-implemented)
 - [Usage](#usage)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Requirements
+## Introduction
 
-- C Compiler (gcc)
-- Make
-- 42 School's environment (if applicable)
+C programming can be challenging without access to standard functions. The `libft` project is designed to create a custom library of these functions, enabling better control and understanding of their implementation. This library will be valuable for future C assignments and projects.
 
-## Installation
+## Common Instructions
 
-1. Clone the repository:
+- **Language**: C
+- **Norm Compliance**: Ensure all code complies with the project norms. Bonus functions must also adhere to these norms.
+- **Memory Management**: Properly manage and free all allocated memory. Memory leaks are not tolerated.
+- **Makefile**: Your Makefile should include rules for `NAME`, `all`, `clean`, `fclean`, and `re`. Use `cc` with `-Wall`, `-Wextra`, and `-Werror` flags.
+- **Submission**: Include `Makefile`, `libft.h`, and all `ft_*.c` files. Unused files must not be submitted.
+- **Testing**: Create and use test programs for validation, though they are not part of the submission.
 
-   git clone https://github.com/your_username/libft.git
-   
-2.Navigate to the project directory:
+## Mandatory Part
 
-cd libft
+### Program Name
 
-3.Build the library using make:
+- `libft.a`
 
-make
+### Files to Submit
 
-4.The compiled library libft.a will be created in the project directory.
+- `Makefile`
+- `libft.h`
+- `ft_*.c`
 
-##functions-implemented
-The following functions are implemented in this library:
+### Makefile Rules
 
-String Functions
-→ft_strlen: Computes the length of a string.
-→ft_strcpy: Copies a string to another.
-→ft_strcmp: Compares two strings.
-→ft_strdup: Duplicates a string.
-Memory Functions
-→ft_memset: Fills a block of memory with a specific value.
-→ft_memcpy: Copies memory area.
-→ft_memmove: Moves memory area.
-→ft_bzero: Fills memory with zeros.
-Character Functions
-→ft_isalpha: Checks if a character is alphabetic.
-→ft_isdigit: Checks if a character is a digit.
-→ft_isalnum: Checks if a character is alphanumeric.
-→ft_toupper: Converts a character to uppercase.
-→ft_tolower: Converts a character to lowercase.
-Additional Functions
-→ft_atoi: Converts a string to an integer.
-→ft_calloc: Allocates memory for an array and initializes it to zero.
-→ft_strnstr: Locates a substring in a string.
+- `NAME`, `all`, `clean`, `fclean`, `re`
 
+### External Functions
 
+- Detailed in the instructions below
+
+### Libft Authorized Functions
+
+- None
+
+### Description
+
+Implement a collection of functions useful for C programming. The library should replicate standard libc functions and provide additional utility functions.
+
+#### Part 1 - Libc Functions
+
+Implement the following functions with the `ft_` prefix:
+
+- `ft_isalpha()`
+- `ft_isdigit()`
+- `ft_isalnum()`
+- `ft_isascii()`
+- `ft_isprint()`
+- `ft_strlen()`
+- `ft_memset()`
+- `ft_bzero()`
+- `ft_memcpy()`
+- `ft_memmove()`
+- `ft_strlcpy()`
+- `ft_strlcat()`
+- `ft_toupper()`
+- `ft_tolower()`
+- `ft_strchr()`
+- `ft_strrchr()`
+- `ft_strncmp()`
+- `ft_memchr()`
+- `ft_memcmp()`
+- `ft_strnstr()`
+- `ft_atoi()`
+
+Use `malloc()` for:
+
+- `ft_calloc()`
+- `ft_strdup()`
+
+#### Part 2 - Additional Functions
+
+Implement the following functions:
+
+- `ft_substr()`
+- `ft_strjoin()`
+- `ft_strtrim()`
+- `ft_split()`
+- `ft_itoa()`
+- `ft_strmapi()`
+- `ft_striteri()`
+- `ft_putchar_fd()`
+- `ft_putstr_fd()`
+- `ft_putendl_fd()`
+- `ft_putnbr_fd()`
+
+## Bonus Part
+
+If the mandatory part is perfect, implement the following functions for manipulating lists:
+
+Add the following structure to `libft.h`:
+
+```c
+typedef struct s_list
+{
+    void *content;
+    struct s_list *next;
+} t_list;
