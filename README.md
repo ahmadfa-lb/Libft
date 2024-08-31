@@ -125,3 +125,22 @@ Implement the following functions:
 - `ft_lstclear()`
 - `ft_lstiter()`
 - `ft_lstmap()`
+
+## Installation
+Clone the repository:
+
+```bash
+git clone https://github.com/your_username/libft.git
+```
+Navigate to the project directory:
+
+```bash
+cd libft
+```
+Build the library using make:
+
+```bash
+make
+```
+The compiled library libft.a will be created in the project directory.
+
