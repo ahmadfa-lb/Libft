@@ -1,1 +1,0 @@
-The libft project involves creating a library (libft.a) with a set of custom implementations for commonly used C standard library functions. This library serves as a practice ground for students to refine their programming skills, particularly in C, and understand the underlying mechanics of function implementations.
