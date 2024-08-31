@@ -36,7 +36,7 @@ make
 
 4.The compiled library libft.a will be created in the project directory.
 
-##Functions Implemented
+##functions-implemented
 The following functions are implemented in this library:
 
 String Functions
