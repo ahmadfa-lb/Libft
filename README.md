@@ -11,7 +11,6 @@
   - [Part 2 - Additional Functions](#part-2---additional-functions)
 - [Bonus Part](#bonus-part)
 - [Installation](#installation)
-- [Usage](#usage)
 
 ## Introduction
 
@@ -130,7 +129,7 @@ Implement the following functions:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/libft.git
+https://github.com/ahmadfa-lb/Libft.git
 ```
 Navigate to the project directory:
 
